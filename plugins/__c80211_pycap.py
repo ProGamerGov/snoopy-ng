@@ -48,8 +48,8 @@ class Snoop(Thread):
 
     @staticmethod
     def get_parameter_list():
-        #TODO: "<proximity_delta> - time between observataions to group proximity sessions (e.g. -m:c80211:mon0,60)"
-        return ["<wifi_interface> - interface to listen on. (e.g. -m c80211_pycap:mon0)"]
+        #TODO: "<proximity_delta> - time between observataions to group proximity sessions (e.g. -m:c80211:wlan0mon,60)"
+        return ["<wifi_interface> - interface to listen on. (e.g. -m c80211_pycap:wlan0mon)"]
 
     def stop(self):
         self.RUN = False
