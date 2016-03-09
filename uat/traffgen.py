@@ -29,7 +29,7 @@ def generate_new_macs(num):
         tmp_mac_addresses.append(rand_mac())
     return tmp_mac_addresses
 
-def make_traffic(num_macs=10, run_time=30, cull=0.9,iface="mon0"):
+def make_traffic(num_macs=10, run_time=30, cull=0.9,iface="wlan0mon"):
         assert(num_macs > 0)
         assert(cull <= 1.0)
         assert(run_time > 0)
