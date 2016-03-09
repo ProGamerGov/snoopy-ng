@@ -23,7 +23,7 @@ class Snoop(Thread):
     """
     This plugin handles 802.11 (WiFi) packets. Submodules are loaded from the
     mods80211 directory.  Pass a value for the interface to listen on, default
-    being mon0.
+    being wlan0mon.
     """
 
     def __init__(self, **kwargs):
