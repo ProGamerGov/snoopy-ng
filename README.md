@@ -19,6 +19,8 @@
 
 Welcome to Snoopy Version 2.0!
 
+Edited by ProGamerGov for "wlan0mon" instead of "mon0" as the default. 
+
 0. Quick Setup
 ==============
 Strapped for time? Try this:
