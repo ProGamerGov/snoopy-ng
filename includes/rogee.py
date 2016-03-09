@@ -24,7 +24,7 @@ class rogueAP:
     def __init__(self, **kwargs):
 
         self.ssid = kwargs.get("ssid", "FreeInternet")
-        self.wlan_iface = kwargs.get("wlan_iface", "mon0")    # If none, will use first wlan capable of injection
+        self.wlan_iface = kwargs.get("wlan_iface", "wlan0mon")    # If none, will use first wlan capable of injection
         self.net_iface = kwargs.get("net_iface", "eth0")    # iface with outbound internet access
         self.enable_mon = kwargs.get("enable_mon", False)   # airmon-ng start <wlan_iface> 
         self.promisc =   kwargs.get("promisc", False)       # Answer all probe requests
