@@ -77,8 +77,8 @@ class Snoop(Thread):
             sub_plugs += "\n\t\t\t  *%s - %s" % (name,desc)
 
         info = {"info" : "This plugin intercepts and processes network traffic. A series of sub-plugins exists within the 'mods' subfolder. Existing sub-plugins are:%s"%sub_plugs,
-                "parameter_list" : [("iface=<dev>", "interface to listen on. e.g. -m iface:iface=mon0"),
-                                    ("mon=[True|False]","First enable monitor mode on <iface>. e.g. -m wifi:iface=mon0,mon=True. If no <iface> specified, will find first appropriate one."),
+                "parameter_list" : [("iface=<dev>", "interface to listen on. e.g. -m iface:iface=wlan0mon"),
+                                    ("mon=[True|False]","First enable monitor mode on <iface>. e.g. -m wifi:iface=wlan0mon,mon=True. If no <iface> specified, will find first appropriate one."),
                                     ("pcap=<pcapFile>","Read data from a pcap capture file instead of an interface.")
                                     ]
                 }
